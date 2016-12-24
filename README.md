@@ -15,6 +15,7 @@ Add electron-usb
 Install electron-rebuild and make sure that there is no version mismatch.
 
 `$ npm i electron-rebuild`
+
 `$ ./node_modules/.bin/electron-rebuild`
 
 Go to the module directory 
@@ -24,9 +25,13 @@ Go to the module directory
 Initialize git repo, add remote and force push.
 
 `$ git init`
+
 `$ git remote add origin https://github.com/ProximaTeam/electron-usb-darwin-prebuilt.git`
+
 `$ git add .`
+
 `$ git commit -m "update;"`
+
 `$ git push -f -u origin master`
 
 ------------------------------------------
