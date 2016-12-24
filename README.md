@@ -1,4 +1,36 @@
 # electron-usb
+
+This is a darwin(osx) prebuilt version of electron-usb for building osx app on linux. If you build electron-usb for osx on Linux it does not work so this step is required to provide the prebuilt files when building on linux.
+
+## Updating
+
+Create a new electron project
+
+`$ git clone https://github.com/electron/electron-quick-start`
+
+Add electron-usb
+
+`$ npm i electron-usb`
+
+Install electron-rebuild and make sure that there is no version mismatch.
+
+`$ npm i electron-rebuild`
+`$ ./node_modules/.bin/electron-rebuild`
+
+Go to the module directory 
+
+`$ cd node_modules/electron-usb`
+
+Initialize git repo, add remote and force push.
+
+`$ git init`
+`$ git remote add origin https://github.com/ProximaTeam/electron-usb-darwin-prebuilt.git`
+`$ git add .`
+`$ git commit -m "update;"`
+`$ git push -f -u origin master`
+
+------------------------------------------
+
 node-usb fork to be used with electron. It's a fork from node-usb which binary are released on github.
 It's a temporary solution until binary package will be available for node 5.1.x and
 windows / linux platforms on node-usb. Pleas refer to https://github.com/nonolith/node-usb on
